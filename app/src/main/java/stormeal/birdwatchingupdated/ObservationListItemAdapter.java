@@ -32,7 +32,7 @@ public class ObservationListItemAdapter extends ArrayAdapter<Observation> {
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         Observation observation = getItem(position);
-        String nameEnglish = observation.getNameEnglish();
+        String nameEnglish = observation.getNameDanish();
         int observationId = observation.getId();
         LinearLayout observationView;
         if (convertView == null) {
