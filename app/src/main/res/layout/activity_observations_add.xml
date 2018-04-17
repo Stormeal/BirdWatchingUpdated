@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="stormeal.birdwatchingupdated.ObservationsAdd">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declare New Observation" />
+
+            <EditText
+                android:id="@+id/add_observation_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Observation ID"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a Bird"/>
+
+            <Spinner
+                android:id="@+id/add_observation_birdSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Bird" />
+
+            <TextView
+                android:id="@+id/add_Observation_UserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/add_observation_latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/add_observation_longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longitude"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/add_observation_placename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Placename"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/add_observation_population"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Population"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/add_observation_comment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Comment"
+                android:inputType="textCapWords" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addObservation2"
+                android:text="Add" />
+
+            <TextView
+                android:id="@+id/add_observation_message_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
