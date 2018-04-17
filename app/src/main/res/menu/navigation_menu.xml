@@ -9,7 +9,7 @@
         android:icon="@drawable/settings"
         android:title="Settings" />
 
-    <item android:id="@+id/nav_logout"
+    <item android:id="@+id/sign_out_button"
         android:icon="@drawable/logout"
         android:title="Log Out" />
 

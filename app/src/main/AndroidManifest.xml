@@ -10,14 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Firebase.ChooserActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Firebase.GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
+            android:name=".Firebase.EmailPasswordActivity"
+            android:label="@string/label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Firebase.PhoneAuthActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/label_phone_auth" />
 
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".ObservationsAdd"></activity>
         <activity android:name=".ObservationActivity"></activity>
     </application>
