@@ -52,7 +52,8 @@
             android:onClick="addObservations"
             android:src="@android:drawable/ic_input_add"
             app:elevation="6dp"
-            app:pressedTranslationZ="12dp" />
+            app:pressedTranslationZ="12dp"
+            android:background="@color/colorPrimary"/>
 
     </android.support.design.widget.CoordinatorLayout>
 
