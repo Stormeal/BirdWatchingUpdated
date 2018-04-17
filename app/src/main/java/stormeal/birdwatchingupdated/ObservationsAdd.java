@@ -28,6 +28,8 @@ public class ObservationsAdd extends AppCompatActivity {
     private Observation observation;
     private EditText titleView, authorView, publisherView, priceView;
 
+
+    //test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
